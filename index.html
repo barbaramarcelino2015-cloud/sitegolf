@@ -621,7 +621,7 @@ body.edit-mode-active [data-editable]:focus{outline:1.5px solid var(--brass); ou
     </div>
 
     <div style="margin-top:40px;">
-      <div style="font-size:13px; font-weight:600; color:var(--green-ink); margin-bottom:14px;">Disponível em 6 cores</div>
+      <div style="font-size:13px; font-weight:600; color:var(--green-ink); margin-bottom:14px;">Disponível em 5 cores</div>
       <div class="grid-gallery-colors" style="display:grid; grid-template-columns:repeat(5, 1fr); gap:16px;">
         <div class="gallery-color-card" data-color="preto" style="background:var(--ivory-2); border-radius:var(--radius-m); padding:18px; text-align:center; cursor:pointer; border:2px solid transparent;">
           <div class="gallery-color-mount" style="width:100%; aspect-ratio:3/4; display:flex; align-items:center; justify-content:center;"></div>
@@ -979,56 +979,6 @@ body.edit-mode-active [data-editable]:focus{outline:1.5px solid var(--brass); ou
   </div>
 </aside>
 
-<!-- EDIT MODE TOGGLE -->
-<button type="button" class="edit-toggle-btn" id="editToggleBtn">
-  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 3a2.85 2.83 0 1 1 4 4L7.5 20.5 2 22l1.5-5.5Z"/></svg>
-  <span id="editToggleLabel">Editar site</span>
-</button>
-
-<!-- EDIT PANEL -->
-<aside class="edit-panel" id="editPanel">
-  <div class="edit-panel-header">
-    <h3>Editar site</h3>
-    <button type="button" class="cart-close-btn" id="editCloseBtn" aria-label="Fechar editor">✕</button>
-  </div>
-  <div class="edit-panel-body">
-    <p class="edit-hint">Clique em qualquer texto na página para o editar diretamente. Use as cores abaixo para personalizar o tema.</p>
-
-    <div class="edit-section">
-      <div class="edit-section-title">Cores</div>
-      <div class="edit-color-row">
-        <label for="colorGreenInk">Verde principal</label>
-        <input type="color" id="colorGreenInk" data-var="--green-ink" value="#0F2E1F">
-      </div>
-      <div class="edit-color-row">
-        <label for="colorGreenMid">Verde médio</label>
-        <input type="color" id="colorGreenMid" data-var="--green-mid" value="#1C4D32">
-      </div>
-      <div class="edit-color-row">
-        <label for="colorBrass">Cor de destaque</label>
-        <input type="color" id="colorBrass" data-var="--brass" value="#B08D57">
-      </div>
-      <div class="edit-color-row">
-        <label for="colorIvory">Fundo claro</label>
-        <input type="color" id="colorIvory" data-var="--ivory" value="#F7F5EF">
-      </div>
-      <div class="edit-color-row">
-        <label for="colorInk">Texto principal</label>
-        <input type="color" id="colorInk" data-var="--ink" value="#2A2A28">
-      </div>
-    </div>
-
-    <div class="edit-section">
-      <div class="edit-section-title">Imagem principal</div>
-      <label class="edit-upload-btn" for="heroImageUpload">Trocar imagem do hero</label>
-      <input type="file" id="heroImageUpload" accept="image/*" style="display:none;">
-    </div>
-
-    <div class="edit-section">
-      <button type="button" class="btn btn-ghost btn-block" id="resetEditsBtn">Repor predefinições</button>
-    </div>
-  </div>
-</aside>
 
 
 
